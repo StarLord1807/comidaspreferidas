@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Comidas Preferidas da Classe</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 40px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .prato {
+      margin-bottom: 10px;
+    }
+
+    .nome {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .barra-container {
+      display: flex;
+      align-items: center;
+      background-color: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 30px;
+    }
+
+    .barra {
+      height: 100%;
+      width: 0;
+      background: linear-gradient(to right, #ff8c00, #ff2d55);
+      animation: preencher 2s ease-out forwards;
+    }
+
+    .valor {
+      margin-left: 10px;
+      min-width: 30px;
+    }
+
+    @keyframes preencher {
+      to {
+        width: var(--largura);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Pratos Preferidos da Classe</h1>
+
+  <div class="container">
+    <div class="prato">
+      <div class="nome">Strogonoff</div>
+      <div class="barra-container">
+        <div class="barra" style="--largura: 80%;"></div>
+        <div class="valor">16</div>
+      </div>
+    </div>
+
+    <div class="prato">
+      <div class="nome">Lasanha</div>
+      <div class="barra-container">
+        <div class="barra" style="--largura: 50%;"></div>
+        <div class="valor">10</div>
+      </div>
+    </div>
+
+    <div class="prato">
+      <div class="nome">Churrasco</div>
+      <div class="barra-container">
+        <div class="barra" style="--largura: 90%;"></div>
+        <div class="valor">18</div>
+      </div>
+    </div>
+
+    <div class="prato">
+      <div class="nome">Empadão</div>
+      <div class="barra-container">
+        <div class="barra" style="--largura: 75%;"></div>
+        <div class="valor">15</div>
+      </div>
+    </div>
+
+    <div class="prato">
+      <div class="nome">Jiló</div>
+      <div class="barra-container">
+        <div class="barra" style="--largura: 15%;"></div>
+        <div class="valor">3</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
